@@ -1,0 +1,16 @@
+my_new_homepage:
+    pattern:  /
+    defaults: { _controller: MyNewBundle:Default:index }
+user_form:
+    pattern:  /userform
+    defaults: { _controller: MyNewBundle:Default:userForm }
+    requirements:
+        _method:  GET
+user_form_send:
+    pattern:  /userform
+    defaults: { _controller: MyNewBundle:Default:userFormSend }
+    requirements:
+        _method:  POST
+succeed:
+    pattern:  /succeed
+    defaults: { _controller: MyNewBundle:Default:userFormSucceed }

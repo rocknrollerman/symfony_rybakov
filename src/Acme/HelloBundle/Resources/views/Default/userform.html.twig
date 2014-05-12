@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Страница для отправки</title>
+    </head>
+<body>
+<form action="{{ path('user_form_send') }}" method="post" {{ form_enctype(form) }}>
+    {{ form_widget(form) }}
+    <input type="submit" />
+</form>
+</body>
+</html>

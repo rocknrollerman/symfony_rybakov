@@ -1,0 +1,3 @@
+my_new_homepage:
+    pattern:  /
+    defaults: { _controller: MyNewBundle:Default:index }
